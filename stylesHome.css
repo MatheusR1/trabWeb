@@ -6,7 +6,12 @@
 }
 
 body {
+    align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body p {
+    margin: 10px;
 }
 
 .bar {
@@ -14,20 +19,54 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 5px 10px;
 }
 
-.linkUnifor {
+a {
     font-family: 'Caveat Brush', cursive;
     font-size: 40px;
+    color: rgba(13, 13, 114, 0.835);
+}
+
+a:link {
     text-decoration: none;
 }
 
-.linkUnifo a:link {
-    text-decoration: none;
+.listUnifor {
+    margin: 10px;
+}
+
+p {
+    font-family: 'Share', cursive;
+    font-size: px;
 }
 
 .table {
-    border: solid blue;
-    border: 2.5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.table table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+.table th {
+    background-color: rgb(19, 19, 95);
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.table #t01 tr:nth-child(odd) {
+    background-color: #fff;
 }

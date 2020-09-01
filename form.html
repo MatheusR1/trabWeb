@@ -5,26 +5,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesForm">
-    <title>Document</title>
+    <link rel="stylesheet" href="./stylesForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+    <title>fomulario</title>
 </head>
 
 <body>
+    <header>
+        <div class="bar">
+            <div class="linkUnifor">
+                <a href="https://www.unifor.br" id="unifor"> UNIFOR </a>
+            </div>
+
+            <div class="uniforImg">
+                <img src="unifor.png" alt="uniforimg" width="300px" height="100px">
+            </div>
+    </header>
+
     <div class="form">
+        <img src="./icon.png" alt="iconUnifor" width="60px">
         <form action="">
-            <p> entre em contato com unifor </p>
+            <label for="name">Nome:</label>
+
+            <input type="text" placeholder="digite seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="digite seu nome">
 
             <textarea name="PS" id="ps" cols="20" rows="8" placeholder="digite uma observaçaõ"></textarea>
-            <input type="submit" value="envie">
 
-            <input id="active" type="checkbox" value="true" /><label for="active"> Usuário ativo?
-    
-                    <select name="select">
-                        <option value="ccj">CCJ</option> 
-                        <option value="cct" selected>CCT</option>
-                        <option value="cch">CCH</option>
-                    </select>
-            </form>
-        </div>
+            <input id="active" type="checkbox" value="true" /> aluno <label for="active"> 
+            
+            <select name="select">
+                <option value="ccj">CCJ</option> 
+                <option value="cct" selected>CCT</option>
+                <option value="cch">CCH</option>
+            </select>
+
+            <br>
+
+            <button> envie </button>
+        </form>
+    </div>
 </body>
 </html>
