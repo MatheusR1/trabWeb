@@ -36,7 +36,7 @@ a:link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    border: 0.2px solid rgb(92, 84, 84);
     margin: 5vw 20vw;
     border-radius: 10px;
     padding-top: 10px;
@@ -53,16 +53,36 @@ a:link {
     flex-direction: column;
 }
 
-.form form input {
+.form form input[type=text],
+select {
     margin-bottom: 5px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.form form select {
+.form form input[type=email] {
+    margin-bottom: 5px;
     width: 100%;
-    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #1d57ad;
-    margin: 10px;
+    box-sizing: border-box;
+}
+
+.form form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
 }
 
 .form form button {
